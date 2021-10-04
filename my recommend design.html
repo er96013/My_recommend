@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Design</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="picture/F_icon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="#page0">
+                <img src="picture/F_icon.png">
+                <h2>frank design</h2>
+            </a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#contact">contact</a>
+                </li>
+                <li>
+                    <a href="#works">works</a>
+                </li>
+                <li>
+                    <a href="#skill">skill</a>
+                </li>
+                <li>
+                    <a href="#about">about</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page0">
+        <h1>frank</h1>
+        <h1>portfolio</h1>
+        <hr/>
+        <p>Welcome To my Work</p>
+        <p>Web Design - UI Design - FrontEnd Development</p>
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+    </div>
+    <div class="page1" id="about">
+        <h1>about</h1>
+        <hr/>
+        <p>Hi, I am Frank</p>
+        <p>I have a great interest in web design, so I spent 2 months studying</p>
+        <p>There is a certain foundation for html/css/javascript/jquery</p>
+        <p>I hope to continue in the future </p>
+        <a href="https://github.com/er96013">resume</a>
+    </div>
+    <div class="page2" id="skill">
+        <h1>skill</h1>
+        <hr/>
+        <ul>
+            <li>
+                <i class="fas fa-tv"></i>
+                <h4>Website Design</h4>
+                <p>網頁設計</p>
+                <p>Html、css、jquery、javascript</p>
+            </li>
+        </ul>
+    </div>
+    <div class="page3" id="works">
+        <h1>works</h1>
+        <hr/>
+        <div class="folio">
+            <ul>
+                <li>
+                    <div class="box">
+                        <div id="img1">
+                            <div class="title">
+                                <div class="titlecenter">
+                                    <h4>練習作品</h4>
+                                    <b>css排版，相片合輯</b>
+                                </div>
+                            </div>
+                            <img src="picture/相片合輯.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <div id="img2">
+                            <div class="title">
+                                <div class="titlecenter">
+                                    <h4>練習作品</h4>
+                                    <b>jquery，相片合輯</b>
+                                </div>
+                            </div>
+                            <img src="picture/相片合輯2.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <div id="img3">
+                            <div class="title">
+                                <div class="titlecenter">
+                                    <h4>練習作品</h4>
+                                    <b>bootsrap排版</b>
+                                </div>
+                            </div>
+                            <img src="picture/bootstrap.jpg">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="full-screen">
+        <div class="full-screen1 x1">
+            <div class="text">
+                <img src="picture/相片合輯-2.jpg">
+                <img src="picture/相片合輯-3.jpg">
+            <a href="#img1" class="btn-close1">X</a>
+            </div>
+        </div>
+        <div class="full-screen2 x2">
+            <div class="text">
+                <img src="picture/相片合輯2-2.jpg">
+                <img src="picture/相片合輯2-3.jpg">
+            <a href="#img2" class="btn-close2">X</a>
+            </div>
+        </div>
+        <div class="full-screen3 x3">
+            <div class="text">
+                <img src="picture/bootstra-2.jpg">
+                <img src="picture/bootstra-3.jpg">
+            <a href="#img2" class="btn-close3">X</a>
+            </div>
+        </div>
+    </div>
+    <div class="page4" id="contact">
+        <h1>contact</h1>
+        <hr/>
+        <h4>Frank</h4>
+        <p>
+            <i class="far fa-envelope"></i>
+            er96013@gmail.com
+        </p>
+        <a href="https://github.com/er96013">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2021 By Frank
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.fa-tv').mouseenter(function(){
+                $('.page2 i').addClass('rotate');
+            })
+            $('.btn-close1').click(function(){
+                $('.full-screen1').addClass('x1');
+            })
+            $('#img1').click(function(){
+                $('.full-screen1').removeClass('x1');
+            })
+            $('.btn-close2').click(function(){
+                $('.full-screen2').addClass('x2');
+            })
+            $('#img2').click(function(){
+                $('.full-screen2').removeClass('x2');
+            })
+            $('.btn-close3').click(function(){
+                $('.full-screen3').addClass('x3');
+            })
+            $('#img3').click(function(){
+                $('.full-screen3').removeClass('x3');
+            })
+        })
+    </script>
+</body>
+</html>
